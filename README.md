@@ -1,5 +1,5 @@
 # 1.0.0
-
+插件市场<https://ext.dcloud.net.cn/plugin?id=2435>
 ## uniapp,添加我的小程序,支持自定义 custom
 
 close 按钮 2 个 base64 按钮比较大 可替换下～
