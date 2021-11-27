@@ -43,7 +43,7 @@
 export default {
   data() {
     return {
-      showTip: false,
+      showTip: true,
       boxTop: 0,
       arrowMargin: 0,
       cotainerMargin: 0,
@@ -112,16 +112,17 @@ export default {
       }, this.delay);
     },
     init() {
-      if (uni.getStorageSync("my_tips_2020")) return;
+      // if (uni.getStorageSync("my_tips_2020")) return;
       let rect = uni.getMenuButtonBoundingClientRect();
       let screenWidth = uni.getSystemInfoSync().screenWidth;
       this.boxTop = rect.bottom;
       this.arrowMargin = rect.width * 0.75 + 4;
       this.cotainerMargin = screenWidth - rect.right;
-      this.timeOut();
+      // this.timeOut();
     },
   },
   onReady() {
+    console.log('lsdkfjldsjfldsjflds')
     this.init();
   },
 };
@@ -152,7 +153,7 @@ export default {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 9999;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
